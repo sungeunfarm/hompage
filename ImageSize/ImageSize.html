@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background image size change</title>
+    <link rel="stylesheet" href="../ImageSize/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <section>
+        <h2>image size change</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facilis ut assumenda magnam rem omnis autem eos, asperiores vel dolor
+            corrupti inventore earum, maiores odio voluptatum numquam sequi,
+            ea voluptate reprehenderit?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facilis ut assumenda magnam rem omnis autem eos, asperiores vel dolor
+            corrupti inventore earum, maiores odio voluptatum numquam sequi,
+            ea voluptate reprehenderit?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facilis ut assumenda magnam rem omnis autem eos, asperiores vel dolor
+            corrupti inventore earum, maiores odio voluptatum numquam sequi,
+            ea voluptate reprehenderit?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facilis ut assumenda magnam rem omnis autem eos, asperiores vel dolor
+            corrupti inventore earum, maiores odio voluptatum numquam sequi,
+            ea voluptate reprehenderit?
+        </p>
+    </section>
+    <script type="text/javascript">
+        const bg = document.getElementById('header');
+        window.addEventListener('scroll', function (){
+            bg.style.backgroundSize = 150 - +window.pageYOffset/12 + '%';
+            bg.style.opacity = 1 - +window.pageYOffset/700 + '';
+
+        })
+    </script>
+</body>
+
+</html>
